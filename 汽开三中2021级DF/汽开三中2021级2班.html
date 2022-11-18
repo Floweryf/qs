@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汽开三中</title>
+    <link rel="stylesheet" href="./qs/css/login.css">
+<script language="javascript">
+function passuser(form) {
+if (form.user.value=="熊老师") {
+if (form.password.value=="123456") {
+location="qs/null.html"
+} else {
+alert("用户名或密码错误")
+}
+} else {  alert("用户名或密码错误")
+}
+}
+function my_cancel(form)
+{
+form.account.value="";
+form.password.value="";
+}
+</script>
+</head>
+<body>
+<div class="login">
+    <div class="login_title">
+        <p><img src="./qs/images/lf.png" style="width:80px;height:80px;margin-right:30px;"/>2021级DF</p>
+    </div>
+    <div class="login_main">
+        <div class="main_left"></div>
+        <div class="main_right">
+            <div class="right_title">用户登录</div>
+            <form name="login">
+            <form action="">
+                <div class="username">
+                    <img src="./qs/images/username.png" alt="">
+                    <input type="text" name="user">
+                </div>
+                <div class="password">
+                    <img src="./qs/images/password.png" alt="">
+                    <input type="password" name="password">
+                </div>
+                
+                <input type="button" onClick="passuser(login)" value="验&nbsp;&nbsp;&nbsp;&nbsp;证">
+				<center><p style="margin-top:20px;font-size:12px;color:#FA6F03;">登录遇到问题，请联系管理员</p></center>
+            </form>
+            </form>
+        </div>
+    </div>
+    <div class="login_footer">
+        <p class="name">版权所有：汽开三中2021级DF</p>
+        <p>管理员：</p>
+        
+    </div>
+</div>
+
+</body>
+</html>
